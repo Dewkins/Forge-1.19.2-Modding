@@ -1,0 +1,14 @@
+{
+  "type": "minecaft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+      {
+        "type": "minecraft:item",
+        "name": "tutorialmod:zircon_block"
+      }
+    ]
+    }
+  ]
+}
