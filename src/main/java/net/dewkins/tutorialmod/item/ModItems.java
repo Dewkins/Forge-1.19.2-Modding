@@ -1,6 +1,7 @@
 package net.dewkins.tutorialmod.item;
 
 import net.dewkins.tutorialmod.TutorialMod;
+import net.dewkins.tutorialmod.item.custom.RandomNumberItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -15,6 +16,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)));
     public static final RegistryObject<Item> RAW_ZIRCON = ITEMS.register("raw_zircon",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)));
+    public static final RegistryObject<Item> RANDOM_NUMBER_GENERATOR = ITEMS.register("random_number_generator",
+            () -> new RandomNumberItem(new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB).stacksTo(1)));
 
 
     public static void register(IEventBus eventBus) {

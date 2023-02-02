@@ -1,6 +1,7 @@
 package net.dewkins.tutorialmod.block;
 
 import net.dewkins.tutorialmod.TutorialMod;
+import net.dewkins.tutorialmod.block.custom.JumpBlock;
 import net.dewkins.tutorialmod.item.ModCreativeModeTab;
 import net.dewkins.tutorialmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -42,6 +43,10 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(3f).requiresCorrectToolForDrops(),
                     UniformInt.of(3,7)), ModCreativeModeTab.TUTORIAL_TAB);
+
+    public static final RegistryObject<Block> JUMP_BLOCK = registerBlock("jump_block",
+            () -> new JumpBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.TUTORIAL_TAB);
 
 
 
